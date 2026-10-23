@@ -180,6 +180,18 @@ dist/DiskDoctor.app      图形界面应用
 dist/diskdoctor          命令行版本
 ```
 
+### 打包发布
+
+```bash
+./scripts/package_release.sh
+```
+
+产出 `dist/release/` 下的发布资产，并自动校验解压后的可执行权限。
+
+> **必须用 `ditto` 打包**：它会保留可执行权限位与资源分支。用 `zip` 或 Python 的
+> `zipfile` 会导致解压后 `DiskDoctor` 与 `smartctl` 丢失 `+x` 权限，
+> 运行时报 `permission denied`。
+
 ---
 
 ## 技术说明
