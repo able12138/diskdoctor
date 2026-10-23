@@ -1,0 +1,36 @@
+# 构建产物
+.build/
+dist/
+*.o
+*.swiftmodule
+*.d
+*.dia
+
+# smartmontools 源码与构建产物（由 scripts/fetch_smartmontools.sh 自动获取）
+vendor/
+
+# macOS
+.DS_Store
+.LSOverride
+Icon?
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 本地报告输出
+*-report.json
